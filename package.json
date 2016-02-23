@@ -12,6 +12,9 @@
     "velocityjs",
     "javascript"
   ],
+  "scripts": {
+    "test": "grunt test"
+  },
   "homepage": "http://velocityjs.org",
   "bugs": {
     "url": "http://github.com/julianshapiro/velocity/issues"

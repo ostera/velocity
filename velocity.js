@@ -1059,6 +1059,7 @@ return function (global, window, document, undefined) {
                    Thus, we re-arrange the templates accordingly. */
                 if (IE) {
                     for (rootProperty in CSS.Hooks.templates) {
+                        if(!CSS.Hooks.templates.hasOwnProperty(rootProperty)) return;
                         hookTemplate = CSS.Hooks.templates[rootProperty];
                         hookNames = hookTemplate[0].split(" ");
 
@@ -1077,6 +1078,7 @@ return function (global, window, document, undefined) {
 
                 /* Hook registration. */
                 for (rootProperty in CSS.Hooks.templates) {
+                    if(!CSS.Hooks.templates.hasOwnProperty(rootProperty)) return;
                     hookTemplate = CSS.Hooks.templates[rootProperty];
                     hookNames = hookTemplate[0].split(" ");
 
